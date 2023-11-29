@@ -1,3 +1,5 @@
+import { mostrarResultado } from "./main.js";
+
 export class Vehiculo {
   //Privados
   #marca;
@@ -15,17 +17,17 @@ export class Vehiculo {
     this.#cilindrada = cilindrada;
   }
   //    constructor por defecto o sin parámetros, lo heredan de forma predeterminada las clases hijas
-  constructor(){}
+  // constructor(){}
 
   mostrarDatos(){
     const datos = `La marca es -> ${this.marca}
-    <br>
+    <br/>
     El modelo es -> ${this.modelo}
-    <br>
+    <br/>
     Su color es -> ${this.color}
-    <br>
+    <br/>
     Se fabricó el año -> ${this.fabricacion}
-    <br>
+    <br/>
     Cilindrada -> ${this.cilindrada}
     `;
 
@@ -34,18 +36,18 @@ export class Vehiculo {
   }
 
   acelerar(velocidad){
-    const mensaje = `<br>Se ha acelerado hasta -> ${velocidad}km/h`;
-    mostrarResultado(`<p>${datos}</p>`)
+    const mensaje = `<br/>Se ha acelerado hasta -> ${velocidad}km/h`;
+    mostrarResultado(`<p>${mensaje}</p>`)
   }
 
   arrancar(){
-    const mensaje = `<br>El coche ${this.#marca}, ${this.#modelo}, de color ${this.#color} ha arrancado`;
-    mostrarResultado(`<p>${datos}</p>`)
+    const mensaje = `<br/>El coche ${this.#marca}, ${this.#modelo}, de color ${this.#color} ha arrancado`;
+    mostrarResultado(`<p>${mensaje}</p>`)
   }
 
   frenar(){
-    const mensaje = `<br>El coche ${this.#marca}, ${this.#modelo}, de color ${this.#color} ha parado`;
-    mostrarResultado(`<p>${datos}</p>`)
+    const mensaje = `<br/>El coche ${this.#marca}, ${this.#modelo}, de color ${this.#color} ha parado`;
+    mostrarResultado(`<p>${mensaje}</p>`)
   }
 
   get marca(){

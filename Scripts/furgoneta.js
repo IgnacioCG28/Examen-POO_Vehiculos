@@ -1,5 +1,4 @@
 import { Vehiculo } from "./vehiculo.js";
-
 export class Furgoneta extends Vehiculo {
   #pasajeros;
 
