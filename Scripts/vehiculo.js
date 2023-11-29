@@ -1,4 +1,4 @@
-class Vehiculo {
+export class Vehiculo {
   //Privados
   #marca;
   #modelo;
@@ -14,7 +14,7 @@ class Vehiculo {
     this.#fabricacion = fabricacion;
     this.#cilindrada = cilindrada;
   }
-  //    constructor por defecto o sin parámetros
+  //    constructor por defecto o sin parámetros, lo heredan de forma predeterminada las clases hijas
   constructor(){}
 
   mostrarDatos(){
