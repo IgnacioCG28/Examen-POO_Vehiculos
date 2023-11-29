@@ -20,16 +20,16 @@ vehiculo1.arrancar();
 vehiculo1.acelerar(90);
 vehiculo1.frenar();
 
-const vehiculo2 = new Furgoneta("Mercedes", "Citan", "Gris", 2022, 2000, 8);
+const furgoneta1 = new Furgoneta("Mercedes", "Citan", "Gris", 2022, 2000, 8);
 mostrarResultado(`<h2>--Vehículo 2 Furgoneta--</h2>`);
-vehiculo2.mostrarDatos();
-vehiculo2.arrancar();
-vehiculo2.acelerar(60);
-vehiculo2.frenar();
+furgoneta1.mostrarDatos();
+furgoneta1.arrancar();
+furgoneta1.acelerar(60);
+furgoneta1.frenar();
 
-const vehiculo3 = new Todoterreno("Range Rover", "Defender", "Negro", 2023, 2030, true);
+const todoterreno1 = new Todoterreno("Range Rover", "Defender", "Negro", 2023, 2030, true);
 mostrarResultado(`<h2>--Vehículo 3 Todoterreno--</h2>`);
-vehiculo3.mostrarDatos();
-vehiculo3.arrancar();
-vehiculo3.acelerar(70);
-vehiculo3.frenar();
+todoterreno1.mostrarDatos();
+todoterreno1.arrancar();
+todoterreno1.acelerar(70);
+todoterreno1.frenar();
