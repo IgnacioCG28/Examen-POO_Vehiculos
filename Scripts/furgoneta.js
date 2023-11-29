@@ -1,3 +1,4 @@
+import { mostrarResultado } from "./main.js";
 import { Vehiculo } from "./vehiculo.js";
 export class Furgoneta extends Vehiculo {
   #pasajeros;
@@ -6,6 +7,12 @@ export class Furgoneta extends Vehiculo {
     // Heredamos de la clase padre
     super(marca, modelo, color, fabricacion, cilindrada);
     this.#pasajeros = pasajeros;
+  }
+
+  mostrarDatos(){
+    super.mostrarDatos();
+    const datos = `Pasajeros -> ${this.pasajeros}`;
+    mostrarResultado(`${datos}`)
   }
 
   get pasajeros() {
