@@ -89,4 +89,22 @@ localStorage.removeItem('marca')
 
 // Eliminar todo en localStorage
 
-localStorage.clear();
+//  localStorage.clear();
+
+// Clase a objeto Storage
+function convertVehiculoToObject(vehiculo) {
+  return {
+    marca: vehiculo.marca,
+    modelo: vehiculo.modelo,
+    color: vehiculo.color, 
+    fabricacion: vehiculo.fabricacion,
+    cilindrada: vehiculo.cilindrada,
+  };
+}
+
+const vehiculoObject2 = convertVehiculoToObject(vehiculo1);
+
+localStorage.setItem("vehiculo2", JSON.stringify(vehiculoObject2));
+
+const vehiculoObject3 = convertVehiculoToObject(furgoneta1);
+localStorage.setItem("vehiculo3", JSON.stringify(vehiculoObject3));
